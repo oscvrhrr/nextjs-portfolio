@@ -2,7 +2,7 @@ import { Nanum_Brush_Script } from "next/font/google"
 import Image from "next/image"
 import Navbar from "./Navbar"
 import HeroBackground from "../../../public/assets/hero-background.png"
-import Ufo from "../../../public/assets/svg/ufo.png"
+import Rocket from "../../../public/assets/svg/rocket.png"
 
 export default function Hero () {
 
@@ -29,7 +29,7 @@ export default function Hero () {
             <div>
                 <Image 
                     alt="Oscar"
-                    src={Ufo}
+                    src={Rocket}
                     width={350}
                     height={350}
                     quality={100}
