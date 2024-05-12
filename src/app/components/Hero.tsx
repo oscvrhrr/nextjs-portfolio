@@ -12,11 +12,11 @@ export default function Hero () {
             <Image 
                 alt="Outer space"
                 src={HeroBackground}
-                quality={100}
+                quality={75}
                 className="relative"
             />
 
-            <div className="absolute top-[17rem] left-32 w-[34rem]">
+            <div className="absolute top-[17rem] left-28 w-[34rem]">
                 <h1 className="text-7xl bg-gradient-to-r from-white to to-zinc-500 text-transparent bg-clip-text">Hey!<br/> My name is Oscar Herrera</h1>
                 <p className="bg-gradient-to-r from-white to to-zinc-500 text-transparent bg-clip-text text-md">
                     Welcome to my little corner in the web! 
@@ -30,10 +30,10 @@ export default function Hero () {
                 <Image 
                     alt="Oscar"
                     src={Rocket}
-                    width={350}
-                    height={350}
+                    width={275}
+                    height={275}
                     quality={100}
-                    className="absolute top-[14rem] right-[20rem]"
+                    className="absolute top-[16rem] right-[21rem]"
                 />
             </div>
         </section>
