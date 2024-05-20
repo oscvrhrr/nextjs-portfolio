@@ -12,7 +12,7 @@ export default function Hero () {
             <Image 
                 alt="Outer space"
                 src={HeroBackground}
-                quality={75}
+                quality={65}
                 className="relative"
             />
 
@@ -34,6 +34,7 @@ export default function Hero () {
                     height={275}
                     quality={100}
                     className="absolute top-[16rem] right-[21rem]"
+                    priority
                 />
             </div>
         </section>
