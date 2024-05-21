@@ -15,7 +15,9 @@ export default function Hero () {
                 width={1423}
                 quality={90}
                 className="relative"
+                placeholder="blur"
                 priority
+
             />
 
             <div className="absolute top-[17rem] left-28 w-[34rem]">
