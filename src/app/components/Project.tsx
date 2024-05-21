@@ -11,7 +11,7 @@ type ProjectProps = {
 export default function Project ({cover, tech1, tech2, tech3}: ProjectProps) {
     return (
         <div className="mb-[14.93rem]">
-            <div className="h-[28rem] w-[28rem] bg-gray-800 m-1 rounded-3xl shadow-[0_0_35px_0_rgba(0,0,0,0.3)] shadow-[#2563EB] relative">
+            <div className="h-[28rem] w-[28rem] bg-gray-800 m-1 mb-10 rounded-3xl shadow-[0_0_35px_0_rgba(0,0,0,0.3)] shadow-[#2563EB] relative">
                 <Image 
                     alt="Project"
                     src={cover}
@@ -22,9 +22,9 @@ export default function Project ({cover, tech1, tech2, tech3}: ProjectProps) {
                     
                 />
             </div>
-            <div>{tech1}</div>
-            <div>{tech2}</div>
-            <div>{tech3}</div>
+            <div className="border rounded border-white inline m-1 py-1 px-2 text-sm">{tech1}</div>
+            <div className="border rounded border-white inline m-1 py-1 px-2 text-sm">{tech2}</div>
+            <div className="border rounded border-white inline m-1 py-1 px-2 text-sm">{tech3}</div>
         </div>
     )
 };
