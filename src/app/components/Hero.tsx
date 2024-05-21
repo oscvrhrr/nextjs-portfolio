@@ -1,7 +1,7 @@
 import { Nanum_Brush_Script } from "next/font/google"
 import Image from "next/image"
 import Navbar from "./Navbar"
-import HeroBackground from "../../../public/assets/mountain-50.png"
+import HeroBackground from "../../../public/assets/mountain-50.jpeg"
 import Rocket from "../../../public/assets/svg/rocket.png"
 
 export default function Hero () {
@@ -13,7 +13,7 @@ export default function Hero () {
                 alt="Outer space"
                 src={HeroBackground}
                 width={1423}
-                quality={95}
+                quality={100}
                 className="relative"
                 priority
             />
