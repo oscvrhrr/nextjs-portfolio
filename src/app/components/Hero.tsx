@@ -13,9 +13,9 @@ export default function Hero () {
                 alt="Outer space"
                 src={HeroBackground}
                 width={1423}
-                quality={100}
+                quality={95}
                 className="relative"
-            
+                priority
             />
 
             <div className="absolute top-[17rem] left-28 w-[34rem]">
