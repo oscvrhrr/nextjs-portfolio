@@ -13,7 +13,7 @@ export default function Hero () {
                 alt="Outer space"
                 src={HeroBackground}
                 width={1423}
-                quality={100}
+                quality={90}
                 className="relative"
                 priority
             />
