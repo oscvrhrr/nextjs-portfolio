@@ -1,21 +1,21 @@
 import { Nanum_Brush_Script } from "next/font/google"
 import Image from "next/image"
-import Navbar from "./Navbar"
 import HeroBackground from "../../../public/assets/mountain-50.jpeg"
 import Rocket from "../../../public/assets/svg/rocket.png"
 
 export default function Hero () {
 
     return (
-        <section> 
-            <Navbar/>
+        <section className="h-[50rem] relative"> 
+            
             <Image 
                 alt="Outer space"
                 src={HeroBackground}
-                width={1423}
                 quality={90}
                 className="relative"
                 placeholder="blur"
+                fill={true}
+                sizes="100vw"
                 priority
 
             />
