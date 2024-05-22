@@ -17,14 +17,27 @@ export default function Project ({cover, tech1, tech2, tech3}: ProjectProps) {
                     src={cover}
                     fill
                     objectFit="cover"
+                    objectPosition="top"
                     className="rounded-3xl"
 
                     
                 />
             </div>
-            <div className="border rounded border-white inline m-1 py-1 px-2 text-sm">{tech1}</div>
-            <div className="border rounded border-white inline m-1 py-1 px-2 text-sm">{tech2}</div>
-            <div className="border rounded border-white inline m-1 py-1 px-2 text-sm">{tech3}</div>
+            <div className="flex justify-between">
+                <div>
+                    <li className="border rounded border-white inline m-1 py-1 px-2 text-sm">{tech1}</li>
+                    <li className="border rounded border-white inline m-1 py-1 px-2 text-sm">{tech2}</li>
+                    <li className="border rounded border-white inline m-1 py-1 px-2 text-sm">{tech3}</li>
+                </div>
+                <Image
+                    alt="Github"
+                    src="../../../../assets/svg/github.svg"
+                    width={30}
+                    height={30}
+                    className="inline"
+                />
+            </div>
+            
         </div>
     )
 };

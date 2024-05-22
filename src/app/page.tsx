@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import Techstack from "./components/Techstack";
 import About from "./components/About";
 import ProjectHub from "./components/ProjectHub";
-
+import Contact from "./components/Contact";
 
 
 export default function Home() {
@@ -13,6 +13,7 @@ export default function Home() {
       <Techstack/>
       <About/>
       <ProjectHub/>
+      <Contact/>
     </>
 
   );
