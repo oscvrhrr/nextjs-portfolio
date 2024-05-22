@@ -1,4 +1,4 @@
-
+import Link from "next/link"
 
 
 
@@ -12,9 +12,7 @@ export default function Navbar () {
             </div>
 
             <ul className="flex w-96 justify-around mr-28">
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
+                
             </ul>
         </nav>
     )
