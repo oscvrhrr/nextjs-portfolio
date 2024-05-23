@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Bitmoji from "../../../public/assets/svg/bitmoji.png";
 
+
 export default function About() {
+
   return (
-    <div className="w-[72.56rem] m-auto my-32">
+    <div id="About" className="w-[72.56rem] m-auto my-32" >
       <h2 className="text-6xl ">About me</h2>
       <div className="flex items-center h-52 border-y my-4 border-stone-700">
         <Image alt="" src={Bitmoji} height={200} width={200} />
