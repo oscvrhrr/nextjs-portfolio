@@ -11,7 +11,7 @@ export default function Hero () {
             <Image 
                 alt="Outer space"
                 src={HeroBackground}
-                quality={90}
+                quality={100}
                 className="relative"
                 placeholder="blur"
                 fill={true}
