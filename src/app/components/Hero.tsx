@@ -21,8 +21,8 @@ export default function Hero () {
             />
 
             <div className="absolute top-[17rem] left-28 w-[34rem]">
-                <h1 className="text-7xl font-bold">Hey!<br/> My name is Oscar Herrera</h1>
-                <p className="text-white text-md">
+                <h1 className="text-7xl font-bold drop-shadow-[1px_1px_10px_rgba(0,0,0,1)] text-white">Hey!<br/> My name is Oscar Herrera</h1>
+                <p className="text-white  text-md">
                     Welcome to my little corner in the web! 
                     I am passionate about learning new tech, and
                     paving beautiful user experiences through out the 
