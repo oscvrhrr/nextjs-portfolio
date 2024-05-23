@@ -24,7 +24,7 @@ export default function Hero () {
                 <h1 className="text-7xl font-bold">Hey!<br/> My name is Oscar Herrera</h1>
                 <p className="text-white text-md">
                     Welcome to my little corner in the web! 
-                    I am passionate aboue learning new tech, and
+                    I am passionate about learning new tech, and
                     paving beautiful user experiences through out the 
                     internet
                 </p>
