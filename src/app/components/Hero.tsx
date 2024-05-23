@@ -6,7 +6,7 @@ import Rocket from "../../../public/assets/svg/rocket.png"
 export default function Hero () {
 
     return (
-        <section className="h-[50rem] relative"> 
+        <section id="Home" className="h-[50rem] relative"> 
             
             <Image 
                 alt="Outer space"
