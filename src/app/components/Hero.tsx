@@ -12,7 +12,7 @@ export default function Hero () {
     const textContainer = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
-        gsap.from(textContainer.current, { duration: 1.5, opacity: 0, x: -500, ease: "power3.out"})
+        gsap.from(textContainer.current, { duration: 1.5, delay: .75, opacity: 0, x: -500, ease: "power3.out"})
     });
 
     return (
@@ -21,7 +21,7 @@ export default function Hero () {
             <Image 
                 alt="Outer space"
                 src={HeroBackground}
-                quality={100}
+                quality={95}
                 className="relative"
                 placeholder="blur"
                 fill={true}
