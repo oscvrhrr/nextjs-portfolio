@@ -17,7 +17,6 @@ export default function About() {
         trigger: paraContainer.current,
         start: "start 70%",
         end: "bottom 150px",
-        markers: true,
         scrub: 1,
         toggleActions: "restart pause reverse none"
       },
