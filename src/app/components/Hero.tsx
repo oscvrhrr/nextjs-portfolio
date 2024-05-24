@@ -1,9 +1,19 @@
+"use client"
 import { Nanum_Brush_Script } from "next/font/google"
 import Image from "next/image"
 import HeroBackground from "../../../public/assets/mountain-50.jpeg"
 import Rocket from "../../../public/assets/svg/rocket.png"
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
+import { useRef } from "react"
 
 export default function Hero () {
+    gsap.registerPlugin(useGSAP)
+    const textContainer = useRef<HTMLDivElement>(null);
+
+    useGSAP(() => {
+        gsap.from(textContainer.current, { duration: 1.5, opacity: 0, x: -500, ease: "power3.out"})
+    });
 
     return (
         <section id="Home" className="h-[50rem] relative"> 
@@ -20,7 +30,7 @@ export default function Hero () {
 
             />
 
-            <div className="absolute top-[16rem] left-28 w-[45rem]">
+            <div ref={textContainer} className="absolute top-[16rem] left-28 w-[45rem]">
                 <h1 className=" text-8xl bg-gradient-to-r to-[#ffffff] from-10% via-50% to-99% via-[#4A91E3] from-[#8E62BC] text-transparent bg-clip-text font-bold drop-shadow-[1px_1px_4px_rgba(0,0,0,1)]">Hey!<br/> My name is Oscar Herrera</h1>
                 <p className="text-white  text-lg">
                     Welcome to my little corner in the web! 
