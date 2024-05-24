@@ -15,7 +15,7 @@ export default function About() {
     gsap.to(paraContainer.current, {
       scrollTrigger: {
         trigger: paraContainer.current,
-        start: "start 75%",
+        start: "start 70%",
         end: "bottom 150px",
         markers: true,
         scrub: 1,
@@ -39,8 +39,8 @@ export default function About() {
         I am a Bay Area native, passionate about learning the mechanics of the
         objects that surround our daily lives. Curiosity is my main driver
         leading every decision I make. I fortunatley crossed paths with
-        technology, and instantly fell in love. These Projects serve as a
-        reflection of my learning journey, and each are a stepping stone to my
+        technology, and instantly fell in <span className="animate animate-pulse text-rose-600">love</span>. These Projects serve as a
+        <span className="bg-gradient-to-r to-white to from-zinc-800 text-transparent bg-clip-text"> reflection</span> of my learning journey, and each are a stepping stone to my
         next learning venture.
       </p>
     </div>
