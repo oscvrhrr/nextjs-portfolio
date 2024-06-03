@@ -33,26 +33,28 @@ export default function About() {
     gsap.to(paraContainer.current, {
       scrollTrigger: {
         trigger: paraContainer.current,
-        start: "start 70%",
-        end: "bottom 150px",
+        start: "start 90%",
+        end: "bottom 500px",
         scrub: 1,
+        // markers: true,
         toggleActions: "restart pause reverse none"
       },
       duration: 2,
       color: "white",
-      ease: "power1.out"
+      ease: "power1.out",
+
     })
   });
 
 
   return (
-    <div id="GetToKnowMe!" className="w-[72.56rem] m-auto my-32" >
+    <div id="GetToKnowMe!" className="w-[72.56rem] m-auto my-32 mt-40" >
       <h2 className="text-7xl from-[#8E62BC] via-[#4A91E3] to-[#AB2574] bg-gradient-to-r bg-clip-text text-transparent">About me</h2>
       <div className="flex items-center h-52 border-y my-4 border-stone-800">
         <Image alt="" src={Bitmoji} height={200} width={200} />
         <p className="text-4xl cursor-pointer" onClick={handleClick}>{string}</p>
       </div>
-      <p ref={paraContainer} className="text-3xl text-zinc-700">
+      <p ref={paraContainer} className="text-3xl text-zinc-800 ">
         I am a Bay Area native, passionate about learning the mechanics of the
         objects that surround our daily lives. Curiosity is my main driver
         leading every decision I make. I fortunatley crossed paths with

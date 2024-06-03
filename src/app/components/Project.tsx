@@ -1,9 +1,11 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import gsap from "gsap";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import Link from "next/link";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 type ProjectProps = {
   cover: string;
@@ -24,8 +26,26 @@ export default function Project({
   site,
   text
 }: ProjectProps) {
+  gsap.registerPlugin(ScrollTrigger)
   const animationRef = useRef<GSAPTween | null>(null);
   const githubContainer = useRef<HTMLDivElement>(null);
+  const projectContainer = useRef<HTMLDivElement>(null);
+  
+  useGSAP(() => {
+    animationRef.current = gsap.to(projectContainer.current, {
+      scrollTrigger: {
+        trigger: projectContainer.current,
+        start: "start 80%",
+        end: "bottom 700px",
+        scrub: 3,
+        toggleActions: "restart pause reverse none"
+      },
+      y: -50,
+      duration: 1,
+      opacity: 1,
+      ease: "power4.out",
+    });
+  });
 
   useGSAP(() => {
     animationRef.current = gsap.to(githubContainer.current, {
@@ -46,8 +66,8 @@ export default function Project({
   };
 
   return (
-    <div className="mb-[14.93rem]">
-      <div className="h-[28rem] w-[28rem] bg-gray-800 m-1 mb-10 rounded-3xl shadow-[0_0_35px_0_rgba(0,0,0,0.3)] shadow-[#2563EB] relative">
+    <div  className="mb-[14.93rem]">
+      <div ref={projectContainer} className="h-[28rem] w-[28rem] opacity-0  bg-gray-800 m-1 mb-10 rounded-3xl shadow-[0_0_35px_0_rgba(0,0,0,0.3)] shadow-[#2563EB] relative">
         <Link href={site} target="_blank">
             <Image
             alt="Project"

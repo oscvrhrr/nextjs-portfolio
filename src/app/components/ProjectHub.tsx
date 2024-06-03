@@ -13,7 +13,7 @@ export default function ProjectHub() {
     <>
       <h2
         id="ProjectHub!"
-        className="text-7xl from-[#8E62BC] via-[#4A91E3] to-[#AB2574] bg-gradient-to-r bg-clip-text text-transparent ml-36 mb-24"
+        className="text-7xl from-[#8E62BC] via-[#4A91E3] to-[#AB2574] bg-gradient-to-r bg-clip-text text-transparent mt-64 ml-36 mb-44"
       >
         Portfolio
       </h2>
