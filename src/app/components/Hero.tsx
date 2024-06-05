@@ -12,7 +12,7 @@ export default function Hero () {
     const textContainer = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
-        gsap.from(textContainer.current, { duration: 1.5, delay: .75, opacity: 0, x: -500, ease: "power3.out"})
+        gsap.to(textContainer.current, { duration: 1, opacity: 1, x: 825, ease: "powerin2.out"})
     });
 
     return (
@@ -21,7 +21,7 @@ export default function Hero () {
             <Image 
                 alt="Outer space"
                 src={HeroBackground}
-                quality={95}
+                quality={90}
                 className="relative"
                 placeholder="blur"
                 fill={true}
@@ -30,9 +30,9 @@ export default function Hero () {
 
             />
 
-            <div ref={textContainer} className="absolute top-[16rem] left-28 w-[45rem]">
-                <h1 className=" text-8xl bg-gradient-to-r to-[#ffffff] from-10% via-50% to-99% via-[#4A91E3] from-[#8E62BC] text-transparent bg-clip-text font-bold drop-shadow-[1px_1px_4px_rgba(0,0,0,1)]">Hey!<br/> My name is Oscar Herrera</h1>
-                <p className="text-white  text-lg">
+            <div ref={textContainer} className="absolute top-[16rem] left-28 w-[45rem] opacity-0 ">
+                <h1 className=" text-8xl bg-gradient-to-r translate-x-[-50rem] to-[#ffffff] from-10% via-50% to-99% via-[#4A91E3] from-[#8E62BC] text-transparent bg-clip-text font-bold drop-shadow-[1px_1px_4px_rgba(0,0,0,1)]">Hey!<br/> My name is Oscar Herrera</h1>
+                <p className="text-white  text-lg translate-x-[-50rem]">
                     Welcome to my little corner in the web! 
                     I am passionate about learning new tech, and
                     paving beautiful user experiences through out the 
