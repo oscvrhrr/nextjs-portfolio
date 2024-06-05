@@ -1,5 +1,4 @@
 import Project from "./Project";
-import Link from "next/link";
 
 const imagePaths = {
   ecommerce: "/assets/project-image-1.jpg",
