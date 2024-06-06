@@ -20,9 +20,9 @@ const paths = {
 
 export default function Techstack () {
     return (
-        <div className="w-[72.56rem] h-[18.75rem] bg-gray-900 m-auto my-[5rem] mb-10 rounded-3xl shadow-[0_0_45px_0_rgba(0,0,0,0.3)] shadow-[#2563EB]">
+        <div className="h-[18.75rem] bg-gray-900 mx-4 my-[5rem] mb-10 rounded-3xl shadow-[0_0_45px_0_rgba(0,0,0,0.3)] shadow-[#2563EB]">
             <h3 className="text-center text-3xl pt-5 ">Technologies</h3>
-            <motion.div  className="text-white flex justify-around w-[51rem] h-[13.9rem] items-center m-auto"
+            <motion.div  className="text-white flex flex-wrap justify-evenly items-center  p-8"
                 initial={{opacity: 0}}
                 // animate={{opacity: 1}}
                 whileInView={{opacity: 1, }}

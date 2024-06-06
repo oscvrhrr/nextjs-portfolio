@@ -12,11 +12,11 @@ export default function ProjectHub() {
     <>
       <h2
         id="ProjectHub!"
-        className="text-7xl from-[#8E62BC] via-[#4A91E3] to-[#AB2574] bg-gradient-to-r bg-clip-text text-transparent mt-64 ml-36 mb-44"
+        className="text-5xl from-[#8E62BC] via-[#4A91E3] to-[#AB2574] bg-gradient-to-r bg-clip-text text-transparent mt-40 ml-4 mb-44"
       >
         Portfolio
       </h2>
-      <div className="w-[72.56rem] flex flex-wrap m-auto justify-between">
+      <div className=" flex flex-col justify-between mx-4">
         <Project
           cover={imagePaths.ecommerce}
           tech1="React"
