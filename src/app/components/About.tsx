@@ -62,20 +62,19 @@ export default function About() {
   });
 
   return (
-    <div id="GetToKnowMe!" className=" m-auto my-32 mt-40">
-      <h2 className="text-5xl ml-4 from-[#8E62BC] via-[#4A91E3] to-[#AB2574] bg-gradient-to-r bg-clip-text text-transparent">
+    <div id="GetToKnowMe!" className="lg:w-[72.56rem] m-auto my-32 mt-40">
+      <h2 className="lg:text-7xl lg:m-auto text-5xl ml-4 mb-12 from-[#8E62BC] via-[#4A91E3] to-[#AB2574] bg-gradient-to-r bg-clip-text text-transparent">
         About me
       </h2>
-      <div className="flex flex-col items-center h-72 border-y  my-4 border-stone-800">
-        <Image alt="" src={Bitmoji} height={150} width={150} />
+      <div onClick={handleClick} className=" lg:flex-row lg:w-full lg:h-52 flex flex-col items-center h-72 border-y w-11/12 m-auto  my-4 border-stone-800">
+        <Image alt="" src={Bitmoji} height={200} width={200} />
         <p
-          className="text-3xl text-center cursor-pointer"
-          onClick={handleClick}
+          className="lg:text-start lg:text-4xl text-3xl text-center cursor-pointer"
         >
           {string}
         </p>
       </div>
-      <p ref={paraContainer} className="text-3xl text-zinc-800 mt-12 mx-4 ">
+      <p ref={paraContainer} className="lg:mx-0 text-3xl text-zinc-800 mt-12 mx-4 ">
         I am a Bay Area native, passionate about learning the mechanics of the
         objects that surround our daily lives. Curiosity is my main driver
         leading every decision I make. I fortunatley crossed paths with

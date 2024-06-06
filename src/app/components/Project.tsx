@@ -67,7 +67,7 @@ export default function Project({
 
   return (
     <div  className="mb-[14.93rem]">
-      <div ref={projectContainer} className="h-[24rem] opacity-0  bg-gray-800 m-1 mb-10 rounded-3xl shadow-[0_0_35px_0_rgba(0,0,0,0.3)] shadow-[#2563EB] relative">
+      <div ref={projectContainer} className="lg:w-[28rem] lg:h-[28rem] h-[24rem] opacity-0  bg-gray-800 m-1 mb-10 rounded-3xl shadow-[0_0_35px_0_rgba(0,0,0,0.3)] shadow-[#2563EB] relative">
         <Link href={site} target="_blank">
             <Image
             alt="Project"
