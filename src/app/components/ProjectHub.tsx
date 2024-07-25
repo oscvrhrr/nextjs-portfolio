@@ -4,7 +4,7 @@ const imagePaths = {
   ecommerce: "/assets/project-image-1.jpg",
   musicapp: "/assets/project-image-2.jpg",
   photosnap: "/assets/project-image-3.jpg",
-  dine: "/assets/project-image-4.jpg",
+  eatbetter: "/assets/new-project.png",
 };
 
 export default function ProjectHub() {
@@ -17,6 +17,26 @@ export default function ProjectHub() {
         Portfolio
       </h2>
       <div className="lg:w-[72.56rem] lg:m-auto md:flex-wrap md:flex-row flex flex-col justify-between mx-4">
+      <Project
+          cover={imagePaths.eatbetter}
+          tech1="Next.js"
+          tech2="TypeScript"
+          tech3="Supabase"
+          site="https://eat-better.vercel.app/"
+          code="https://github.com/adrianrramos/EatBetter"
+          text="An fitness app that tracks calories, and lets users adjust their diet goals"
+        />
+
+        <Project
+          cover={imagePaths.musicapp}
+          tech1="TypeScript"
+          tech2="Next.js"
+          tech3="OAuth"
+          site="https://music-app-react-five.vercel.app/"
+          code="https://github.com/oscvrhrr/music-app-react"
+          text="Musica an app thats connected to spotify's RESTapi. Relax and enjoy the tunes."
+        />
+
         <Project
           cover={imagePaths.ecommerce}
           tech1="React"
@@ -25,16 +45,6 @@ export default function ProjectHub() {
           site="https://ecommerce-react-audiophile.netlify.app/"
           code="https://github.com/oscvrhrr/ecommerce-store"
           text="Audiophile an e-commerce store. A fully responsive React App, on mobile, iPad, and Desktop."
-        />
-
-        <Project
-          cover={imagePaths.musicapp}
-          tech1="TypeScript"
-          tech2="Next.js"
-          tech3="Tailwind"
-          site="https://music-app-react-five.vercel.app/"
-          code="https://github.com/oscvrhrr/music-app-react"
-          text="Musica an app thats connected to spotify's RESTapi. Relax and enjoy the tunes."
         />
 
         <Project
@@ -47,15 +57,6 @@ export default function ProjectHub() {
           text="PhotoSnap a multi-page marketing site. Fully responsive on mobile, iPad, and desktop."
         />
 
-        <Project
-          cover={imagePaths.dine}
-          tech1="HTML"
-          tech2="CSS"
-          tech3="JavaScript"
-          site="https://oscvrhrr.github.io/dine-restaurant/"
-          code="https://github.com/oscvrhrr/dine-restaurant"
-          text="A restaurant website that allows users to book reservations. Fully responsive on mobile, iPad, and desktop."
-        />
       </div>
     </>
   );
