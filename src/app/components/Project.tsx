@@ -5,13 +5,11 @@ import gsap from "gsap";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import { useState } from "react";
 
 type ProjectProps = {
   cover: string;
-  tech1: string;
-  tech2: string;
-  tech3: string;
+  children: React.ReactNode;
   code: string;
   site: string;
   text: string;
@@ -19,9 +17,7 @@ type ProjectProps = {
 
 export default function Project({
   cover,
-  tech1,
-  tech2,
-  tech3,
+  children,
   code,
   site,
   text
@@ -30,6 +26,9 @@ export default function Project({
   const animationRef = useRef<GSAPTween | null>(null);
   const githubContainer = useRef<HTMLDivElement>(null);
   const projectContainer = useRef<HTMLDivElement>(null);
+  const [slide, setSlide] = useState(false)
+
+
   
   useGSAP(() => {
     animationRef.current = gsap.to(projectContainer.current, {
@@ -81,15 +80,7 @@ export default function Project({
       </div>
       <div className="flex justify-between">
         <div>
-          <li className="border rounded border-white inline m-1 py-1 px-2 text-sm">
-            {tech1}
-          </li>
-          <li className="border rounded border-white inline m-1 py-1 px-2 text-sm">
-            {tech2}
-          </li>
-          <li className="border rounded border-white inline m-1 py-1 px-2 text-sm">
-            {tech3}
-          </li>
+         {children}
         </div>
         <div
           ref={githubContainer}

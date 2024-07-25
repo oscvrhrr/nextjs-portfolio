@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Bitmoji from "../../../public/assets/laptop-bitmoji.png";
 import BtnRocket from "../../../public/assets/svg/btn-rocket.svg";
@@ -28,7 +29,7 @@ export default function ContactForm() {
             type="text"
             placeholder="Message"
           />
-          <button
+          <button onClick={(e) => e.preventDefault()}
             className=" w-full h-[2.5rem] ml-1 bg-gradient-to-r from-[#763AF5] to to-[#A604F2]  rounded animate-pulse"
             type="submit"
           >
