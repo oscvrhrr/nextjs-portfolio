@@ -75,8 +75,7 @@ export default function About() {
         </p>
       </div>
       <p ref={paraContainer} className="lg:mx-0 text-3xl text-zinc-800 mt-12 mx-4 ">
-        I am a Bay Area native, passionate about learning the mechanics of the
-        objects that surround our daily lives. Curiosity is my main driver
+        I am a Bay Area native, web enthusiast, and passionate about learning new tech. Curiosity is my main driver
         leading every decision I make. I fortunatley crossed paths with
         technology, and instantly fell in{" "}
         <span className="animate animate-pulse text-rose-600">love</span>. These
