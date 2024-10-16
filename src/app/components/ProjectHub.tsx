@@ -3,9 +3,9 @@ import Tech from "./Tech";
 
 const imagePaths = {
   ecommerce: "/assets/project-image-1.jpg",
-  musicapp: "/assets/project-image-2.jpg",
+  musicapp: "/assets/moment.png",
   photosnap: "/assets/project-image-3.jpg",
-  eatbetter: "/assets/new-project.png",
+  eatbetter: "/assets/file-uploader.png",
 };
 
 export default function ProjectHub() {
@@ -20,27 +20,27 @@ export default function ProjectHub() {
       <div className="lg:w-[72.56rem] lg:m-auto md:flex-wrap md:flex-row flex flex-col justify-between mx-4">
       <Project
         cover={imagePaths.eatbetter}
-        site="https://eat-better.vercel.app/"
-        code="https://github.com/adrianrramos/EatBetter"
-        text="An fitness app that tracks calories, and lets users adjust their diet goals"
+        site="https://file-uploader-production-c9a3.up.railway.app/"
+        code="https://github.com/oscvrhrr/file-uploader"
+        text="Fullstack File Storage App that allows users to organize, upload, & download files"
       >
-       <Tech tech="Next.js"/>
-       <Tech tech="React"/>
+       <Tech tech="Express"/>
        <Tech tech="TailwindCSS"/>
-       <Tech tech="Supabase"/>
+       <Tech tech="Prisma"/>
+       <Tech tech="PostgreSQL"/>
+
       </Project>
 
       <Project
         cover={imagePaths.musicapp}
         site="https://music-app-react-five.vercel.app/"
-        code="https://github.com/oscvrhrr/music-app-react"
-        text="Musica an app thats connected to spotify's RESTapi. Relax and enjoy the tunes."
+        code="https://github.com/oscvrhrr/moment"
+        text="A Music Festival inventory app which allows users to create, manage and store popular upcoming events"
       >
-       <Tech tech="Next.js"/>
-       <Tech tech="React"/>
+       <Tech tech="Express"/>
        <Tech tech="TailwindCSS"/>
-       <Tech tech="OAuth"/>
-      
+       <Tech tech="PostgreSQL"/>
+       <Tech tech="Supabase"/>
        </Project>
 
       <Project
