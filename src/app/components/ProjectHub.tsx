@@ -33,7 +33,7 @@ export default function ProjectHub() {
 
       <Project
         cover={imagePaths.musicapp}
-        site="https://music-app-react-five.vercel.app/"
+        site="https://moment-1aws.onrender.com"
         code="https://github.com/oscvrhrr/moment"
         text="A Music Festival inventory app which allows users to create, manage and store popular upcoming events"
       >
