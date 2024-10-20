@@ -18,11 +18,11 @@ export default function About() {
     if (string[0] == "Click here to learn 4 fun facts about me!") {
       setString(
         string.map(
-          (i) => "My favorite ice cream is Ben and Jerry's Milk & Cookies!"
+          (i) => "If I had to choose a favorite ice cream it would definitely be Ben and Jerry's Milk & Cookies!"
         )
       );
     } else if (
-      string[0] == "My favorite ice cream is Ben and Jerry's Milk & Cookies!"
+      string[0] == "If I had to choose a favorite ice cream it would definitely be Ben and Jerry's Milk & Cookies!"
     ) {
       setString(
         string.map(
@@ -33,8 +33,8 @@ export default function About() {
       string[0] ==
       "My high school friend introduced me to world of programming! "
     ) {
-      setString(string.map((i) => "Im currently learning Node.js!"));
-    } else if (string[0] == "Im currently learning Node.js!") {
+      setString(string.map((i) => "Im currently learning TypeScript!"));
+    } else if (string[0] == "Im currently learning TypeScript!") {
       setString(
         string.map(
           (i) => "My longest roadtrip has been from San Francisco to Chicago!"

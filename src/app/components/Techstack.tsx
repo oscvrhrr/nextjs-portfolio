@@ -8,11 +8,11 @@ import { animate, stagger, motion } from "framer-motion"
 const paths = [
     { name: 'react', path: '../../../../assets/svg/react.svg' },
     { name: 'javascript', path: '../../../../assets/svg/javascript.svg' },
-    { name: 'typescript', path: '../../../../assets/svg/typescript.svg' },
     { name: 'tailwind', path: '../../../../assets/svg/tailwind.svg' },
     { name: 'sass', path: '../../../../assets/svg/sass.svg' },
     { name: 'css', path: '../../../../assets/svg/css.svg' },
-    { name: 'html', path: '../../../../assets/svg/html.svg' }
+    { name: 'html', path: '../../../../assets/svg/html.svg' },
+    { name: 'node', path: '../../../../assets/svg/nodejs-icon.svg' },
 ];
 
 const fadeInAnimationVariants = {
