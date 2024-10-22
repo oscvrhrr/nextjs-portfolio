@@ -14,7 +14,7 @@ export default function Navbar () {
                 <Link className="mx-2 bg-gradient-to-t from-white to to-zinc-500 text-transparent bg-clip-text" href={"#GetToKnowMe!"} >About</Link>
                 <Link className="mx-2 bg-gradient-to-t from-white to to-zinc-500 text-transparent bg-clip-text" href={"#ProjectHub!"} >Projects</Link>
                 <Link className="mx-2 bg-gradient-to-t from-white to to-zinc-500 text-transparent bg-clip-text" href={"#LetsMeet!"} >Contact</Link>
-                <Link className="mx-2 bg-gradient-to-t from-white to to-zinc-500 text-transparent bg-clip-text" href="https://github.com/oscvrhrr/blog-api" >Blog</Link>
+                <Link className="mx-2 bg-gradient-to-t from-white to to-zinc-500 text-transparent bg-clip-text" href="https://blog-api-six-orpin.vercel.app" >Blog</Link>
                 
             </ul>
         </nav>
