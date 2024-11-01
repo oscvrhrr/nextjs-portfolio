@@ -4,7 +4,7 @@ import Tech from "./Tech";
 const imagePaths = {
   ecommerce: "/assets/project-image-1.jpg",
   musicapp: "/assets/moment.png",
-  photosnap: "/assets/project-image-3.jpg",
+  beatplay: "/assets/project-image-2.jpg",
   eatbetter: "/assets/file-uploader.png",
 };
 
@@ -43,6 +43,19 @@ export default function ProjectHub() {
        <Tech tech="Supabase"/>
        </Project>
 
+       <Project
+          cover={imagePaths.beatplay}
+          site="https://music-app-react-five.vercel.app"
+          code="https://github.com/oscvrhrr/music-app-react"
+          text="BeatPlay: Stream music on demand. relax and enjoy the tunes!"
+        >
+          <Tech tech="TypeScript"/>
+          <Tech tech="React"/>
+          <Tech tech="Next.js"/>
+          <Tech tech="Supabase"/>
+          <Tech tech="JWT"/>
+        </Project>
+
       <Project
         cover={imagePaths.ecommerce}
         site="https://ecommerce-react-audiophile.netlify.app/"
@@ -53,18 +66,6 @@ export default function ProjectHub() {
         <Tech tech="SCSS"/>
         <Tech tech="Vite"/>
       </Project>
-
-        <Project
-          cover={imagePaths.photosnap}
-          site="https://oscvrhrr.github.io/photosnap-multi-pg-website/"
-          code="https://github.com/oscvrhrr/photosnap-multi-pg-website"
-          text="PhotoSnap a multi-page marketing site. Fully responsive on mobile, iPad, and desktop."
-        >
-          <Tech tech="HTML"/>
-          <Tech tech="CSS"/>
-          <Tech tech="JavaScript"/>
-        </Project>
-
       </div>
     </>
   );
