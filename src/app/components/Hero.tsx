@@ -1,45 +1,46 @@
-"use client";
+import { Heading, Container, Flex, Box, Text } from "@radix-ui/themes";
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 import Image from "next/image";
-import HeroBackground from "../../../public/assets/mountain-50.jpeg";
-import Rocket from "../../../public/assets/svg/rocket.png";
+
 
 export default function Hero() {
   return (
-    <section id="Home" className="h-[50rem] w-screen relative">
-      <Image
-        alt="Outer space"
-        src={HeroBackground}
-        quality={100}
-        className="object-cover lg:object-fill"
-        placeholder="blur"
-        fill={true}
-        sizes="100vw"
-        priority
-      />
-
-      <div className="lg:w-[45rem] lg:px-0 lg:left-28 lg:top-[16rem] top-56 absolute text-start px-6 md:w-[40rem] ">
-        <h1 className="lg:text-8xl md:text-7xl text-6xl  bg-gradient-to-r  to-[#ffffff] from-10% via-50% to-99% via-[#4A91E3] from-[#8E62BC] text-transparent bg-clip-text font-bold drop-shadow-[1px_1px_4px_rgba(0,0,0,1)]">
-          Hey!
-          <br/> My name is Oscar Herrera
-        </h1>
-        <p className="text-white mt-10 lg:mt-0 lg:text-lg ">
-          Welcome to my little corner in the web! I am passionate about learning
-          new tech, and paving beautiful user experiences through out the
-          internet
-        </p>
-      </div>
-
-      <div>
-        <Image
-          alt="Oscar"
-          src={Rocket}
-          width={100}
-          height={100}
-          quality={100}
-          className="none  "
-          priority
-        />
-      </div>
-    </section>
+    <Container
+      size="3"
+      pt="9"
+    >
+      <Flex justify="between" align="center" className="">
+        <Flex direction="column" maxWidth="470px">
+          <Flex direction="column" gap="2">
+          <Heading wrap="balance" size="8" as="h1">
+            Hello there! I am Oscar a developer based in
+            Chicago
+          </Heading>
+            <Text color="gray" wrap="balance" size="3">
+              I love crafting pleasant user interfaces that makes you smile :)
+            </Text>
+            <Text color="gray" wrap="pretty" size="3">
+              Im a Bay Area native, I fortunatley crossed paths with technology, and instantly fell in love. These Projects serve as a reflection of my learning journey, and each are a stepping stone to my next learning venture.
+            </Text>
+            <Flex py="2">
+              <Link target="_blank" href={"https://github.com/oscvrhrr"}>
+                <GitHubLogoIcon className="mr-2" />
+              </Link>
+              <LinkedInLogoIcon />
+            </Flex>
+          </Flex>
+        </Flex>
+        <Flex maxWidth="220px" direction="column">
+          <Image
+          alt="mono"
+          src={"/assets/mono.jpg"}
+          width={300}
+          height={300}
+          className="rounded-lg"
+          />
+        </Flex>
+      </Flex>
+    </Container>
   );
 }
