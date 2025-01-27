@@ -97,11 +97,44 @@ const Works = () => {
               </Link>
             </Flex>
             <Text size="3">
-              Audiophile is a <Link className="underline" href="https://www.frontendmentor.io/">Frontend Mentor</Link> challenge, its 
+              Audiophile is a <Link className="underline" target="_blank" href="https://www.frontendmentor.io/">Frontend Mentor</Link> challenge, its 
               a platfrom that provides Figma designs for frontend developer to practice real life work flows. This is built with React and 
-              is a fully responsive for various screen sizes
+              is fully responsive for various screen sizes
             </Text>
           </Flex>
+          <Flex direction="column">
+            <Flex align="center">
+              <Text size="6">
+                  Photosnap
+              </Text>
+              <Link href="https://oscvrhrr.github.io/photosnap-multi-pg-website/" target="_blank">
+                <ExternalLinkIcon className="ml-2"/>
+              </Link>
+              <Link href="https://github.com/oscvrhrr/photosnap-multi-pg-website" target="_blank">
+                <GitHubLogoIcon className="ml-2"/>
+              </Link>
+            </Flex>
+            <Text size="3">
+              This live demo is another <Link target="_blank" className="underline" href={"https://www.frontendmentor.io/"}>Frontend Mentor</Link> design
+              I built this with html, css, and javascript. I styled this with vanilla css, and can confidenlty use any css framework to build user interfaces. 
+              Check out the live site on any screen size
+
+            </Text>
+          </Flex>
+          <AspectRatio ratio={16 / 8} >
+            <img
+              src="https://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/sign/misc/photosnap.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtaXNjL3Bob3Rvc25hcC5qcGVnIiwiaWF0IjoxNzM4MDAyNTU4LCJleHAiOjE3Njk1Mzg1NTh9.VqTPHUMxgUo1ItRJADjrlxxB5WBjrACYaY1YH5Blh2A"
+              alt="A house in a forest"
+              style={{
+                objectFit: "cover",
+                width: "100%",
+                height: "100%",
+                borderRadius: "var(--radius-2)",
+                boxShadow: "var(--shadow-1)"
+              }}
+              
+              />
+          </AspectRatio>
         </Grid>
       </Flex>
     </Container>
