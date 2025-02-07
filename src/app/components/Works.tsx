@@ -27,7 +27,7 @@ const Works = () => {
         ( <Grid columns="2" gap="6" gapY="8" rows="repeat(4, 240px)">
           <AspectRatio ratio={16 / 8} >
             <img
-              src="https://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/sign/misc/mydrive.gif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtaXNjL215ZHJpdmUuZ2lmIiwiaWF0IjoxNzM0NzIxNTMxLCJleHAiOjE3NjYyNTc1MzF9.5I59XBDsaJlbBevBsl499wdIzf2VPTyTsoV1s_sYwmI&t=2024-12-20T19%3A05%3A31.674Z"
+              src="https://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/sign/misc/mydrive%20(1).gif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtaXNjL215ZHJpdmUgKDEpLmdpZiIsImlhdCI6MTczODg5MDA4NiwiZXhwIjoxNzcwNDI2MDg2fQ.mcGxW6t8pSanMaHiLyWSq1RV7o-SLbPuuqN40SdHVws"
               alt="A house in a forest"
               style={{
                 objectFit: "cover",
