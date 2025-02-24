@@ -86,7 +86,7 @@ const Works = () => {
           </AspectRatio>
           <AspectRatio ratio={16 / 8} >
             <img
-              src="https://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/sign/misc/chat-app.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtaXNjL2NoYXQtYXBwLmpwZWciLCJpYXQiOjE3Mzg4Nzc0MzIsImV4cCI6MTc3MDQxMzQzMn0.-4duGVnGeMrdsdWmkSiq6pASNxARgYzS29ge6eb0Z_A"
+              src="https://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/public/Files_fileupload/user-uploads/demo/chat-app.gif"
               alt="A house in a forest"
               style={{
                 objectFit: "cover",
