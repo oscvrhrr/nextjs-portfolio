@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
-import { Container, Heading, AspectRatio, Flex, Text, Grid } from "@radix-ui/themes";
+import { Container, Heading, AspectRatio, Flex, Text, Grid, Theme } from "@radix-ui/themes";
 import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
 import React from "react";
@@ -10,9 +10,9 @@ import { FrontendProjects } from "./FrontendProjects";
 
 
 
-const Works = () => {
-  const [isToggled, setIsToggled] = useState(false);
 
+const Works = () => {
+  const [isToggled, setIsToggled] = useState(false);  
 
 
 
@@ -25,7 +25,7 @@ const Works = () => {
         {
           isToggled ? ( <FrontendProjects/> ) :
         ( <Grid columns="2" gap="6" gapY="8" rows="repeat(4, 240px)">
-          <AspectRatio ratio={16 / 8} >
+          <AspectRatio  ratio={16 / 8} >
             <img
               src="https://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/sign/misc/mydrive%20(1).gif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtaXNjL215ZHJpdmUgKDEpLmdpZiIsImlhdCI6MTczODg5MDA4NiwiZXhwIjoxNzcwNDI2MDg2fQ.mcGxW6t8pSanMaHiLyWSq1RV7o-SLbPuuqN40SdHVws"
               alt="A house in a forest"
@@ -70,7 +70,7 @@ const Works = () => {
                 This is a blog app, I integrated tinyMCE text editor to enable rich content creation. I loved working prismjs, which allows code snippets to be highlighted
             </Text>
           </Flex>
-          <AspectRatio ratio={16 / 8} >
+          <AspectRatio  ratio={16 / 8} >
             <img
               src="http://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/sign/misc/blogapi-ezgif.com-optimize.gif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtaXNjL2Jsb2dhcGktZXpnaWYuY29tLW9wdGltaXplLmdpZiIsImlhdCI6MTczNzU2NDA5MSwiZXhwIjoxNzY5MTAwMDkxfQ.sbuV1k33n6evFBnJ52lFQb853G_4-AimjFsYy60egL0&t=2025-01-22T16%3A41%3A31.937Z"
               alt="A house in a forest"
@@ -84,7 +84,7 @@ const Works = () => {
               
               />
           </AspectRatio>
-          <AspectRatio ratio={16 / 8} >
+          <AspectRatio  ratio={16 / 8} >
             <img
               src="https://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/public/Files_fileupload/user-uploads/demo/chat-app.gif"
               alt="A house in a forest"
