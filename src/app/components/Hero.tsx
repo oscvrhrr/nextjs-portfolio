@@ -12,19 +12,36 @@ export default function Hero() {
           <Flex direction="column" gap="2">
             <RoughNotationGroup show={true}>
               <Heading wrap="balance" size="8" as="h1">
-                Hello there! I am Oscar a <RoughNotation type="highlight" color="#00749E">
-                developer
-                </RoughNotation> based in Chicago
+                Hello there! I am Oscar a{" "}
+                <RoughNotation type="highlight" color="#00749E">
+                  developer
+                </RoughNotation>{" "}
+                based in Chicago
               </Heading>
               <Text>
                 I love creating user interfaces that make you smile :)
               </Text>
               <Text wrap="balance" size="3">
-                I learned web development through <RoughNotation type="circle" color="#FFDC00"><Link target="_blank" href="https://www.theodinproject.com">The Odin Project,</Link></RoughNotation>which is an{" "}
-                <RoughNotation type="highlight" color="#CC4E00">open-source curriculum</RoughNotation> focused on full-stack development.
-                Throughout my journey I learned to work with <RoughNotation type="highlight" color="#00749E">modern JavaScript
-                technologies.</RoughNotation> I then discovered my love for creating intuitive
-                and <RoughNotation type="highlight" color="#CC4E00">user-centered</RoughNotation> web applications.
+                I learned web development through{" "}
+                <RoughNotation type="circle" color="#FFDC00">
+                  <Link target="_blank" href="https://www.theodinproject.com">
+                    The Odin Project,
+                  </Link>
+                </RoughNotation>
+                which is an{" "}
+                <RoughNotation type="highlight" color="#CC4E00">
+                  open-source curriculum
+                </RoughNotation>{" "}
+                focused on full-stack development. Throughout my journey I
+                learned to work with{" "}
+                <RoughNotation type="highlight" color="#00749E">
+                  modern JavaScript technologies.
+                </RoughNotation>{" "}
+                I then discovered my love for creating intuitive and{" "}
+                <RoughNotation type="highlight" color="#CC4E00">
+                  user-centered
+                </RoughNotation>{" "}
+                web applications.
               </Text>
             </RoughNotationGroup>
             <Text color="gray" wrap="pretty" size="3"></Text>
