@@ -10,6 +10,7 @@ import {
 import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export const FrontendProjects = () => {
   return (
@@ -45,7 +46,8 @@ export const FrontendProjects = () => {
         </Text>
       </Flex>
       <AspectRatio ratio={16 / 8}>
-        <img
+        <Image
+          fill
           src="https://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/sign/misc/audiophile-desktop.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtaXNjL2F1ZGlvcGhpbGUtZGVza3RvcC5qcGciLCJpYXQiOjE3Mzc5ODgyNzgsImV4cCI6MTc2OTUyNDI3OH0.7nQLiTCZ2sPH0aLxyYjjVGN4mQPkVlgbn6cmTaAcQ4M"
           alt="A house in a forest"
           style={{
@@ -58,7 +60,8 @@ export const FrontendProjects = () => {
         />
       </AspectRatio>
       <AspectRatio ratio={16 / 8}>
-        <img
+        <Image
+          fill
           src="https://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/sign/misc/photosnap.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtaXNjL3Bob3Rvc25hcC5qcGVnIiwiaWF0IjoxNzM4MDAyNTU4LCJleHAiOjE3Njk1Mzg1NTh9.VqTPHUMxgUo1ItRJADjrlxxB5WBjrACYaY1YH5Blh2A"
           alt="A house in a forest"
           style={{
@@ -131,7 +134,8 @@ export const FrontendProjects = () => {
         </Text>
       </Flex>
       <AspectRatio ratio={16 / 8}>
-        <img
+        <Image
+          fill
           src="https://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/sign/misc/dine.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtaXNjL2RpbmUuanBlZyIsImlhdCI6MTczODg3NjMyNCwiZXhwIjoxNzcwNDEyMzI0fQ.0qiHCUTZEQlP4fbzZzmPljzcnqCwpdeCUOtbYzPn8VQ"
           alt="A house in a forest"
           style={{
