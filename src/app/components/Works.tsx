@@ -29,6 +29,7 @@ const Works = () => {
           <AspectRatio  ratio={16 / 8} >
             <Image
               fill
+              quality={100}
               src="https://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/sign/misc/mydrive%20(1).gif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtaXNjL215ZHJpdmUgKDEpLmdpZiIsImlhdCI6MTczODg5MDA4NiwiZXhwIjoxNzcwNDI2MDg2fQ.mcGxW6t8pSanMaHiLyWSq1RV7o-SLbPuuqN40SdHVws"
               alt="A house in a forest"
               style={{
@@ -75,6 +76,7 @@ const Works = () => {
           <AspectRatio  ratio={16 / 8} >
             <Image
               fill
+              quality={100}
               src="http://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/sign/misc/blogapi-ezgif.com-optimize.gif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtaXNjL2Jsb2dhcGktZXpnaWYuY29tLW9wdGltaXplLmdpZiIsImlhdCI6MTczNzU2NDA5MSwiZXhwIjoxNzY5MTAwMDkxfQ.sbuV1k33n6evFBnJ52lFQb853G_4-AimjFsYy60egL0&t=2025-01-22T16%3A41%3A31.937Z"
               alt="A house in a forest"
               style={{
@@ -90,6 +92,8 @@ const Works = () => {
           <AspectRatio  ratio={16 / 8} >
             <Image
               fill
+              unoptimized
+              quality={100}
               src="https://fzyxhpuljtyplklakuoy.supabase.co/storage/v1/object/public/Files_fileupload/user-uploads/demo/chat-app.gif"
               alt="A house in a forest"
               style={{
