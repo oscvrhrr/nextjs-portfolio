@@ -14,8 +14,8 @@ import Image from "next/image";
 
 export const FrontendProjects = () => {
   return (
-    <Grid columns="2" gap="6" gapY="8" rows="repeat(4, 240px)">
-      <Flex direction="column">
+    <Grid columns={{ initial: "1", md: "2"}} gap="6" gapY="8" rows="repeat(4, 240px)">
+      <Flex direction="column" style={{ gridAutoColumns: 1 }}>
         <Flex align="center">
           <Text size="6">Audiophile</Text>
           <Link
@@ -45,7 +45,7 @@ export const FrontendProjects = () => {
           and is fully responsive for various screen sizes
         </Text>
       </Flex>
-      <AspectRatio ratio={16 / 8}>
+      <AspectRatio ratio={16 / 8} style={{ gridColumn: 2 }}>
         <Image
           fill
           quality={100}
