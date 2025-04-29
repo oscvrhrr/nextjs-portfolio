@@ -18,14 +18,14 @@ const Works = () => {
 
 
   return (
-    <Container size="3" className="h-full" py="9">
+    <Container size={{ initial: "1", md: "3" }} className="h-full" py="9" mx={{initial: "5"}}>
       <Flex direction="column" gap="5">
         <Heading size="7">Projects</Heading>
         <ToggleProjects setIsToggled={ setIsToggled }/>
         <Text>Some of my latest projects</Text>
         {
           isToggled ? ( <FrontendProjects/> ) :
-        ( <Grid columns="2" gap="6" gapY="8" rows="repeat(4, 240px)">
+        ( <Grid columns={{ initial: "1", md: "2"}} gap="6" gapY="8" rows="repeat(4, 240px)">
           <AspectRatio  ratio={16 / 8} >
             <Image
               fill

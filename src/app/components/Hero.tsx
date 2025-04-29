@@ -6,8 +6,8 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <Container size="3" pt="9">
-      <Flex justify="between" align="center" className="">
+    <Container size={{ initial: "1", md: "3" }} pt="9" px={"5"}>
+      <Flex direction={{ initial: "column", md: "row"}} justify="between" align="center">
         <Flex direction="column" maxWidth="470px">
           <Flex direction="column" gap="2">
             <RoughNotationGroup show={true}>
